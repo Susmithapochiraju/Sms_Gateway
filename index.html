@@ -1,10 +1,20 @@
 <!DOCTYPE HTML>
 <html>
  <head>
-  <title>PhoneGap</title>
+  <title>SMS Fateway</title>
   <script type="text/javascript" charset="utf-8" src="cordova.js"></script>
+   <script type="text/javascript" charset="utf-8">
+
+    document.addEventListener("deviceready", onDeviceReady, false);
+
+    
+    function onDeviceReady() {
+    alert("Device Ready Function");
+    window.location.href = 'http://www.google.com';
+    }
+    </script>
  </head>
- <body>
-    <h1>Hello PhoneGap</h1>
+ <body onload="onDeviceReady()">
+    <h1>SMS Gateway Application</h1>
  </body>
 </html>
